@@ -1,4 +1,4 @@
-package com.zzp.common;
+package com.zzp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

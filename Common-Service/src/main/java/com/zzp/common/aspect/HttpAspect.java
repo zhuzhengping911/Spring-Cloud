@@ -22,7 +22,7 @@ public class HttpAspect {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(HttpAspect.class);
 
-    @Pointcut("execution(public * com.zzp.controller.*.*(..))")
+    @Pointcut("execution(public * com.zzp.*.controller.*.*(..))")
     public void log(){
 
     }
