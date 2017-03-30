@@ -1,0 +1,11 @@
+server:
+  port: 3333
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:1111/eureka/
+spring:
+  application:
+    name: common-service

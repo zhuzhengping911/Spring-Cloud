@@ -6,7 +6,7 @@
 	<groupId>com.zzp</groupId>
 	<artifactId>springcloud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
 	<name>springcloud</name>
 	<description>spring cloud project for Spring Boot</description>
@@ -19,6 +19,9 @@
 	</parent>
 	<modules>
 		<module>Computer-Service</module>
+		<module>User-Service</module>
+		<module>Common-Service</module>
+		<module>User-Service</module>
 	</modules>
 
 	<properties>
@@ -28,10 +31,10 @@
 	</properties>
 
 	<dependencies>
-		<!--<dependency>-->
-			<!--<groupId>org.springframework.boot</groupId>-->
-			<!--<artifactId>spring-boot-starter-aop</artifactId>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
 		<!--<dependency>-->
 			<!--<groupId>org.springframework.boot</groupId>-->
 			<!--<artifactId>spring-boot-starter-data-jpa</artifactId>-->

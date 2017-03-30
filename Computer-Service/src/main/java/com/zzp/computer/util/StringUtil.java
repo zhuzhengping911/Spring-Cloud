@@ -1,4 +1,4 @@
-package com.zzp.util;
+package com.zzp.computer.util;
 
 /**
  * Created by zhuzhengping on 2017/3/28.
