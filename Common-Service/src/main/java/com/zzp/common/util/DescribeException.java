@@ -1,4 +1,4 @@
-package com.zzp.util;
+package com.zzp.common.util;
 
 /**
  * Created by zhengping.zhu

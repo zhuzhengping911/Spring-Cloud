@@ -1,6 +1,6 @@
-package com.zzp.util;
+package com.zzp.common.util;
 
-import com.zzp.pojo.Result;
+import com.zzp.common.pojo.Result;
 
 /**
  * Created by zhengping.zhu

@@ -1,4 +1,4 @@
-package com.zzp.pojo;
+package com.zzp.common.pojo;
 
 /**
  * Created by zhengping.zhu
