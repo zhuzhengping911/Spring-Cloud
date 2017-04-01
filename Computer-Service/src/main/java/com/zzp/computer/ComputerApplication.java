@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScans;
 @SpringBootApplication
 @EnableEurekaClient
 @ComponentScans({
-        @ComponentScan("com.zzp.common.aspect"),
+        @ComponentScan("com.zzp.common.util"),
         @ComponentScan("com.zzp.computer")
 })
 public class ComputerApplication {

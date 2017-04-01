@@ -1,7 +1,6 @@
-package com.zzp.common.aspect;
+package com.zzp.common.util;
 
 import com.zzp.common.pojo.Result;
-import com.zzp.common.util.ExceptionHandle;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
