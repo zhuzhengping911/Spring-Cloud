@@ -14,6 +14,10 @@ public class CommonService {
     @Autowired
     RestTemplate restTemplate;
 
+    /**
+     * 制定断路器回调方法
+     * @return
+     */
     @HystrixCommand(fallbackMethod = "addServiceFallback")
     public String getComputer(){
         return restTemplate.postForEntity("http://COMMON-SERVICE/common/addFead",Object.class,String.class).getBody();
