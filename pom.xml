@@ -23,6 +23,7 @@
 		<module>Common-Service</module>
 		<module>User-Service</module>
 		<module>Ribbon-Service</module>
+		<module>FeignService</module>
 	</modules>
 
 	<properties>
@@ -32,6 +33,7 @@
 	</properties>
 
 	<dependencies>
+		<!--spring切面aop依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-aop</artifactId>
@@ -49,6 +51,7 @@
 			<!--<artifactId>mybatis-spring-boot-starter</artifactId>-->
 			<!--<version>1.2.0</version>-->
 		<!--</dependency>-->
+		<!--服务注册与发现依赖-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
@@ -59,16 +62,18 @@
 			<!--<artifactId>mysql-connector-java</artifactId>-->
 			<!--<scope>runtime</scope>-->
 		<!--</dependency>-->
+		<!--测试依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
+		<!--健康监控依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+		<!--api文档生成依赖-->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -79,9 +84,15 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.6.1</version>
 		</dependency>
+		<!--负载均衡ribbon依赖-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-ribbon</artifactId>
+		</dependency>
+		<!--负载均衡feigen依赖-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feigen</artifactId>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
