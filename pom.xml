@@ -23,7 +23,7 @@
 		<module>Common-Service</module>
 		<module>User-Service</module>
 		<module>Ribbon-Service</module>
-		<module>FeignService</module>
+		<module>Feign-Service</module>
 	</modules>
 
 	<properties>
@@ -92,7 +92,7 @@
 		<!--负载均衡feigen依赖-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-feigen</artifactId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
 		</dependency>
 		<!--断路器的依赖-->
 		<dependency>
