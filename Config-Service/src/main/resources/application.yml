@@ -1,0 +1,15 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zhuzhengping911/Spring-Cloud/
+          search-paths: config/config-repo
+          username: zhuzhengping911
+          password: while(1)me&&XW
+  profiles:
+    active: native
