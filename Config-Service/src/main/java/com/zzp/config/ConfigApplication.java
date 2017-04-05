@@ -2,11 +2,13 @@ package com.zzp.config;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.config.server.EnableConfigServer;
 
 /**
  * Created by zhuzhengping on 2017/4/6.
  */
+@EnableDiscoveryClient
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigApplication {
