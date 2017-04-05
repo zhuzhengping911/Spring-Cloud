@@ -25,6 +25,7 @@
 		<module>Ribbon-Service</module>
 		<module>Feign-Service</module>
 		<module>Config-Service</module>
+		<module>Config-Client</module>
 	</modules>
 
 	<properties>
