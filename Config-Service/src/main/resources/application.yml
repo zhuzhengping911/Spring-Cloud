@@ -7,9 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/zhuzhengping911/Spring-Cloud/
+          uri: http://github.com/zhuzhengping911/Spring-Cloud/
           search-paths: config/config-repo
-          username: zhuzhengping911
-          password: while(1)me&&XW
+          username: 
+          password:
   profiles:
     active: native
