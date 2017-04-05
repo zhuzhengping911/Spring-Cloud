@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Created by zhuzhengping on 2017/4/3.
  */
-@FeignClient("common-service")
+@FeignClient(value = "common-service",fallback = CommonClientHystrix.class)
 public interface CommonClient {
 
     @RequestMapping(value = "/addFead",method = RequestMethod.POST)

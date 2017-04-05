@@ -15,7 +15,7 @@ public class ConsumeController {
     @Autowired
     CommonClient commonClient;
 
-    @RequestMapping(value = "/addFead",method = RequestMethod.GET)
+    @RequestMapping(value = "/addFead",method = RequestMethod.POST)
     public String addFead(){
         return commonClient.addFead();
     }
