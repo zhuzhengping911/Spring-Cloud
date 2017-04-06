@@ -7,12 +7,12 @@ spring:
     config:
       server:
         git:
-          uri: http://github.com/zhuzhengping911/Spring-Cloud/
+          uri: https://github.com/zhuzhengping911/Spring-Cloud/
           search-paths: config/config-repo
-          username:
+          username: 
           password:
-  profiles:
-    active: native
+#  profiles:
+#    active: native
 eureka:
   instance:
     hostname: localhost
