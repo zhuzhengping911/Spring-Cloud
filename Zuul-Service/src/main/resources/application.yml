@@ -9,6 +9,7 @@ eureka:
 spring:
   application:
     name: zuul-service
+#zuul url映射配置
 zuul:
   routes:
     api-user:

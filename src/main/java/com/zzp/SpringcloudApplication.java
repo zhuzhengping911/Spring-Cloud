@@ -13,7 +13,7 @@ public class SpringcloudApplication {
 
 	@RequestMapping(value = "/")
 	public String location(){
-		return "ShangHai";
+		return "ShangHai-eureka service";
 
 	}
 
