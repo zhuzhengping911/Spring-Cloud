@@ -1,0 +1,18 @@
+server:
+  port: 7002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+spring:
+  application:
+    name: zzp
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-service
+      profile: dev
+      label: master
+
+

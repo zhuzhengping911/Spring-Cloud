@@ -1,6 +1,7 @@
 package com.zzp.client.controller;
 
-import org.springframework.beans.factory.annotation.Value;
+import com.zzp.client.properties.ZzpProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,20 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ClientController {
 
-    @Value("${from}")
-    private String from;
+    @Autowired
+    ZzpProperties zzpProperties;
 
-    public String getFrom() {
-        return from;
-    }
-
-    public void setFrom(String from) {
-        this.from = from;
-    }
 
     @RequestMapping("/from")
     public String from(){
-        return this.from;
+        return zzpProperties.getFrom();
 
 
     }
