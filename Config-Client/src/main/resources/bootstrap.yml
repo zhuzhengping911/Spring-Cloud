@@ -1,9 +1,11 @@
 server:
   port: 7002
 eureka:
+  instance:
+    hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://${eureka.instance.hostname}:1111/eureka/
 spring:
   application:
     name: zzp
@@ -14,5 +16,6 @@ spring:
         service-id: config-service
       profile: dev
       label: master
+      fail-fast: true
 
 
