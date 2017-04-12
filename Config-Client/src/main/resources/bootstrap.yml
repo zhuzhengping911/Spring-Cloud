@@ -14,7 +14,7 @@ spring:
       discovery:
         enabled: true
         service-id: config-service
-      profile: dev
+      profile: test
       label: master
       fail-fast: true
   rabbitmq:
