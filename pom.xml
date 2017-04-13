@@ -27,6 +27,7 @@
 		<module>Config-Service</module>
 		<module>Config-Client</module>
 		<module>Zuul-Service</module>
+		<module>Eureka-Service</module>
 	</modules>
 
 	<properties>
