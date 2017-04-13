@@ -1,14 +1,14 @@
 package com.zzp.computer.dao;
 
-import com.zzp.computer.pojo.Computer;
 import org.mapstruct.Mapper;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * Created by zhuzhengping on 2017/4/13.
  */
+@Repository
 @Mapper
-public interface ComputerMapper extends JpaRepository<Computer,Long>{
+public interface ComputerMapper {
 
-    Computer findByComputerName(String computerName);
+    String findByComputerName(String computerName);
 }
