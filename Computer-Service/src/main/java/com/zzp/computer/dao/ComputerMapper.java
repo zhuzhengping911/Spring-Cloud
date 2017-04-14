@@ -11,4 +11,5 @@ import org.springframework.stereotype.Repository;
 public interface ComputerMapper {
 
     String findByComputerName(String computerName);
+
 }
