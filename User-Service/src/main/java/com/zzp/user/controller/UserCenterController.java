@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by zhuzhengping on 2017/3/31.
  */
 @RestController
-@RequestMapping("/userCenter")
 public class UserCenterController {
 
     @RequestMapping(value = "/{userId}",method = RequestMethod.GET)
