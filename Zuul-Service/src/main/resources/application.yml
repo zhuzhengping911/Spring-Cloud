@@ -15,3 +15,6 @@ zuul:
     api-user:
       path: /api-user/**
       serviceId: user-service
+    api-computer:
+      path: /api-computer/**
+      serviceId: computer-service
