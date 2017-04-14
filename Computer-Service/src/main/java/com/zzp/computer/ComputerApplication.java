@@ -4,6 +4,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 
@@ -18,6 +19,7 @@ import org.springframework.context.annotation.ComponentScans;
         @ComponentScan("com.zzp.computer")
 })
 @MapperScan(basePackages = "com.zzp.**.dao")
+@EnableFeignClients
 public class ComputerApplication {
 
     public static void main(String[] args) {

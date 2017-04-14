@@ -16,6 +16,12 @@ public class CommonController {
 
     @RequestMapping(value = "/addFead",method = RequestMethod.POST)
     public String addFead(@RequestBody Map<String,Object> reqMap){
-        return "ShangHai";
+        int a = Integer.parseInt(reqMap.get("userId").toString());
+        if(a == 1){
+            return "SH";
+        }else {
+            return "" + 1/0;
+        }
+
     }
 }
