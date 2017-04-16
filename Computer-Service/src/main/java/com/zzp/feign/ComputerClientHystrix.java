@@ -1,6 +1,6 @@
 package com.zzp.feign;
 
-import com.zzp.client.ComputerClient;
+import com.zzp.computer.client.ComputerClient;
 import org.springframework.stereotype.Component;
 
 /**

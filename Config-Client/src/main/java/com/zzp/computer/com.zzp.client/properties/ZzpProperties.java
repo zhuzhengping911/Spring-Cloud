@@ -1,4 +1,4 @@
-package com.zzp.client.properties;
+package com.zzp.computer.client.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

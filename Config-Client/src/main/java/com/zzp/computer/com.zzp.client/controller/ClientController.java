@@ -1,6 +1,6 @@
-package com.zzp.client.controller;
+package com.zzp.computer.client.controller;
 
-import com.zzp.client.properties.ZzpProperties;
+import com.zzp.computer.client.properties.ZzpProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.RequestMapping;

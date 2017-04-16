@@ -1,4 +1,4 @@
-package com.zzp.client;
+package com.zzp.computer.client;
 
 import com.zzp.feign.ComputerClientHystrix;
 import org.springframework.cloud.netflix.feign.FeignClient;
