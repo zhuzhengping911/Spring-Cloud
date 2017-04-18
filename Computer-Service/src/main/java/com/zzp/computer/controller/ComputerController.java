@@ -1,5 +1,6 @@
 package com.zzp.computer.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.zzp.computer.dao.ComputerMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -31,10 +32,15 @@ public class ComputerController {
         return new Date().toString();
     }
 
+    @HystrixCommand(fallbackMethod = "error")
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
 //        return "login";
         return new Date() + "";
+    }
+
+    public String error() {
+        return "hi,"+new Date()+",sorry,error!";
     }
 
 
