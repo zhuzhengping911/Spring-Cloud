@@ -3,6 +3,8 @@ package com.zzp.common.util;
 /**
  * Created by zhuzhengping on 2017/4/16.
  */
+//@Configuration
+//@EnableWebSecurity
 //public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 public class WebSecurityConfig {
 //    @Override
