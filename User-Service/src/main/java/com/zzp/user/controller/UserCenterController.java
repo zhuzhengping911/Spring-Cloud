@@ -25,4 +25,8 @@ public class UserCenterController {
 //        return "login";
         return new Date() + "";
     }
+
+    public String error() {
+        return "hi,"+new Date()+",sorry,error!";
+    }
 }
