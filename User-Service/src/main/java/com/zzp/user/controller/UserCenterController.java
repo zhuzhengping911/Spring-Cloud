@@ -26,17 +26,6 @@ public class UserCenterController {
         return new Date() + "";
     }
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index() {
-//        return "login";
-        return "this is user";
-    }
-
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    public String hello() {
-//        return "login";
-        return new Date() + "";
-    }
 
     public String error() {
         return "hi,"+new Date()+",sorry,error!";
