@@ -9,6 +9,8 @@ eureka:
 spring:
   application:
     name: user-service
+  zipkin:
+    base-url: http://localhost:9111
 #redis配置
   redis:
 #  数据库索引
