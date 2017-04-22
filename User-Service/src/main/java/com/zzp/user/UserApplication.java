@@ -1,6 +1,7 @@
 package com.zzp.user;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -32,6 +33,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableHystrixDashboard
 @RestController
 @EnableFeignClients
+@MapperScan("com.zzp.user.**.dao")
 public class UserApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class, args);

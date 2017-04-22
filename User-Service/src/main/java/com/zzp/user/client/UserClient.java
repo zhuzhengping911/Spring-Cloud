@@ -1,6 +1,6 @@
 package com.zzp.user.client;
 
-import com.zzp.user.feign.UserClientHystrix;
+import com.zzp.feign.UserClientHystrix;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

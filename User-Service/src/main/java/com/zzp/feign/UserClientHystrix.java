@@ -1,4 +1,4 @@
-package com.zzp.user.feign;
+package com.zzp.feign;
 
 import com.zzp.user.client.UserClient;
 import org.springframework.stereotype.Component;
