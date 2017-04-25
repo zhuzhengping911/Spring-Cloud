@@ -10,16 +10,16 @@
 <h1>Title</h1>
 <table width="100%" border="1" cellspacing="1" cellpadding="0">
     <tr>
-        <td>作者</td>
+        <td>${author}</td>
         <td>教程名称</td>
         <td>地址</td>
     </tr>
     <!--/*@thymesVar id="learnList" type=""*/-->
-    <tr th:each="learn : ${learnList}">
-        <td th:text="${learn.author}">zzp</td>
-        <td th:text="${learn.title}">SPringCloud</td>
-        <td><a th:href="${learn.url}" target="_blank">点我</a></td>
-    </tr>
+    <!--<tr th:each="learn : ${learnList}">-->
+        <!--<td th:text="${learn.author}">zzp</td>-->
+        <!--<td th:text="${learn.title}">SPringCloud</td>-->
+        <!--<td><a th:href="${learn.url}" target="_blank">点我</a></td>-->
+    <!--</tr>-->
 </table>
 </div>
 </body>
