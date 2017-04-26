@@ -14,7 +14,7 @@ import java.util.Date;
 @RestController
 public class UserCenterController {
 
-    @RequestMapping(value = "/{userId}",method = RequestMethod.GET)
+    @RequestMapping(value = "/user/{userId}",method = RequestMethod.GET)
     public String getUser(@PathVariable("userId") Long userId){
         return "ShangHai";
     }
