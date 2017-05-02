@@ -3,6 +3,7 @@ package com.zzp.common.util;
 /**
  * Created by zhengping.zhu
  * on 2017/3/22.
+ * 错误枚举类
  */
 public enum ExceptionEnum {
     UNKNOW_ERROR(-1,"未知错误"),
