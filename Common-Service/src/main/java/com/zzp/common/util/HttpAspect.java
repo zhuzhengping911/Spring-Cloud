@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * Created by zhuzhengping on 2017/3/30.
+ * AOP切面，记录方法的调用，入参以及出參
  */
 @Aspect
 @Component

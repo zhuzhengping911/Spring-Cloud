@@ -10,12 +10,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * Created by zhengping.zhu
  * on 2017/3/22.
+ * 错误定义
  */
 @ControllerAdvice
 public class ExceptionHandle {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(ExceptionHandle.class);
 
+    /**
+     * 判断错误是否是已定义的已知错误，不是则由未知错误代替，同时记录在log中
+     * @param e
+     * @return
+     */
     @ExceptionHandler(value = Exception.class)
     @ResponseBody
     public Result exceptionGet(Exception e){

@@ -5,6 +5,7 @@ import com.zzp.common.pojo.Result;
 /**
  * Created by zhengping.zhu
  * on 2017/3/22.
+ * 统一返回结果集
  */
 public class ResultUtil {
 
