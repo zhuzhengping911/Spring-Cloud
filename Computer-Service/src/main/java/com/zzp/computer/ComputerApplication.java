@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
@@ -23,7 +22,7 @@ import org.springframework.web.client.RestTemplate;
  */
 
 @SpringBootApplication
-@EnableEurekaClient
+//@EnableEurekaClient
 @ComponentScans({
         @ComponentScan("com.zzp.common.util"),
         @ComponentScan("com.zzp.computer")
