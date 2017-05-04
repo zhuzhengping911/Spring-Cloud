@@ -72,5 +72,8 @@ public class ComputerApplication {
 //        return new Date().toString();
 //        return restTemplate.getForObject("http://localhost:1114/user",String.class);
     }
-    
+    @RequestMapping("/login")
+    public String login(){
+        return "login";
+    }
 }
