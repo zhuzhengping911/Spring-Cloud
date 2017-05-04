@@ -22,7 +22,7 @@ public class ComputerController {
 
 
     @HystrixCommand(fallbackMethod = "error")
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    @RequestMapping(value = "/log", method = RequestMethod.GET)
     public String login() {
 //        return "login";
         return new Date() + "";
