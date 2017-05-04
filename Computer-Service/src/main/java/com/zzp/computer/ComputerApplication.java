@@ -6,15 +6,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
@@ -22,7 +23,7 @@ import org.springframework.web.client.RestTemplate;
  */
 
 @SpringBootApplication
-//@EnableEurekaClient
+@EnableEurekaClient
 @ComponentScans({
         @ComponentScan("com.zzp.common.util"),
         @ComponentScan("com.zzp.computer")
@@ -31,7 +32,8 @@ import org.springframework.web.client.RestTemplate;
 @EnableFeignClients
 @EnableHystrix
 @EnableHystrixDashboard
-@RestController
+//@RestController
+@Controller
 public class ComputerApplication {
 
     public static void main(String[] args) {
@@ -60,14 +62,15 @@ public class ComputerApplication {
 
     @RequestMapping("/computer")
     public String index() {
-//        return "index";
-        return "this is computer";
+        return "index";
+//        return "this is computer";
     }
 
     @RequestMapping("/hello")
     public String hello() {
-//        return "hello";
+        return "hello";
 //        return new Date().toString();
-        return restTemplate.getForObject("http://localhost:1114/user",String.class);
+//        return restTemplate.getForObject("http://localhost:1114/user",String.class);
     }
+    
 }
