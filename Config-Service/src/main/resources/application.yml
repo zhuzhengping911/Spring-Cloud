@@ -1,5 +1,5 @@
 server:
-  port: 7001
+  port: 1115
 spring:
   application:
     name: config-service
@@ -9,10 +9,13 @@ spring:
         git:
           uri: https://github.com/zhuzhengping911/Spring-Cloud/
           search-paths: config/config-repo
-          username:
-          password:
+          username: zhuzhengping911
+          password: while(1)me&&XW
+      enabled: true
+#  jmx:
+#    default_domain: cloud.config.server
 #  profiles:
-#    active: native
+#    active: dev
 eureka:
   instance:
     hostname: localhost
