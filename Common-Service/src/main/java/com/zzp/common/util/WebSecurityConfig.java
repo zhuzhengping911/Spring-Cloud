@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 /**
  * Created by zhuzhengping on 2017/4/16.
+ * 验证用户权限
  */
 @Configuration
 @EnableWebSecurity
