@@ -10,6 +10,39 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>Zuul-Service</artifactId>
-
-
+    <packaging>jar</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--<configuration>-->
+                <!--&lt;!&ndash; 热部署 &ndash;&gt;-->
+                <!--<fork>true</fork>-->
+                <!--</configuration>-->
+                <configuration>
+                    <outputDirectory>/Users/zhuzhengping/Desktop/pjms</outputDirectory>
+                    <finalName>device-server</finalName>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+    </build>
 </project>

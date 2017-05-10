@@ -149,29 +149,5 @@
 		</dependencies>
 	</dependencyManagement>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!--<configuration>-->
-					<!--&lt;!&ndash; 热部署 &ndash;&gt;-->
-					<!--<fork>true</fork>-->
-				<!--</configuration>-->
-			</plugin>
-		</plugins>
-		<resources>
-			<resource>
-				<directory>src/main/java</directory>
-				<includes>
-					<include>**/*.xml</include>
-				</includes>
-			</resource>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
-	</build>
-
 
 </project>
