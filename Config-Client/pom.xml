@@ -38,7 +38,7 @@
                 <!--</configuration>-->
                 <configuration>
                     <outputDirectory>/Users/zhuzhengping/Desktop/pjms</outputDirectory>
-                    <finalName>device-server</finalName>
+                    <finalName>Config-Client</finalName>
                 </configuration>
                 <executions>
                     <execution>
