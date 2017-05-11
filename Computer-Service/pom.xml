@@ -43,7 +43,7 @@
                 <!--</configuration>-->
                 <configuration>
                     <outputDirectory>/Users/zhuzhengping/Desktop/pjms</outputDirectory>
-                    <finalName>device-server</finalName>
+                    <finalName>Computer-Service</finalName>
                 </configuration>
                 <executions>
                     <execution>
