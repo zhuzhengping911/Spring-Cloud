@@ -30,7 +30,7 @@
                 <!--</configuration>-->
                 <configuration>
                     <outputDirectory>/Users/zhuzhengping/Desktop/pjms</outputDirectory>
-                    <finalName>device-server</finalName>
+                    <finalName>User-Service</finalName>
                 </configuration>
                 <executions>
                     <execution>
