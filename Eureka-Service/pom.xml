@@ -22,7 +22,7 @@
                 <!--</configuration>-->
                 <configuration>
                     <outputDirectory>/Users/zhuzhengping/Desktop/pjms</outputDirectory>
-                    <finalName>device-server</finalName>
+                    <finalName>Eureka-Service</finalName>
                 </configuration>
                 <executions>
                     <execution>
