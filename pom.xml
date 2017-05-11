@@ -19,7 +19,6 @@
 		<module>Computer-Service</module>
 		<module>User-Service</module>
 		<module>Common-Service</module>
-		<module>User-Service</module>
 		<module>Ribbon-Service</module>
 		<module>Feign-Service</module>
 		<module>Config-Service</module>
