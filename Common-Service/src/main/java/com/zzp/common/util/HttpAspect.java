@@ -53,6 +53,10 @@ public class HttpAspect {
         Result result = null;
         try {
 
+            /**
+             * 验证签名的方法
+             */
+
         } catch (Exception e) {
             return exceptionHandle.exceptionGet(e);
         }
