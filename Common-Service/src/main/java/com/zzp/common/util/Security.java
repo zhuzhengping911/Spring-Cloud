@@ -36,4 +36,34 @@ public class Security {
 
         return URLEncoder.encode(str, "UTF-8");
     }
+
+    /**
+     * 验证数据签名
+     *
+     * @param param 请求参数
+     * @return 验证结果
+     * @throws Exception
+     */
+    public static boolean validateSignature(Map<String, Object> param) throws Exception {
+
+        if (param == null || param.size() == 0) {
+            logger.warn("validateSignature, param is empty, channelId:" + param.get("channelId") + ", userId:" + param.get("userId"));
+            return false;
+        }
+
+        String signature = StringUtil.toStr(param.get("signature"));
+        if (StringUtil.isNullEmpty(signature)) {
+            logger.warn("validateSignature, signature is empty, channelId:" + param.get("channelId") + ", userId:" + param.get("userId"));
+            return false;
+        }
+
+//        String secret = JedisUtil.hget(StringUtil.toStr(param.get("channelId")) + ':' + StringUtil.toString(param.get("userId")), "secret");
+//        if (StringUtil.isNullEmpty(secret)) {
+            logger.warn("validateSignature, secret is empty, channelId:" + param.get("channelId") + ", userId:" + param.get("userId"));
+            return false;
+//        }
+
+//        return signature.equals(Encrypt.getEncryptedData(parseStrBykey(param), secret));
+    }
+
 }
