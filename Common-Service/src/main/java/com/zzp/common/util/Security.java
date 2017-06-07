@@ -51,6 +51,7 @@ public class Security {
             return false;
         }
 
+
         String signature = StringUtil.toStr(param.get("signature"));
         if (StringUtil.isNullEmpty(signature)) {
             logger.warn("validateSignature, signature is empty, channelId:" + param.get("channelId") + ", userId:" + param.get("userId"));
