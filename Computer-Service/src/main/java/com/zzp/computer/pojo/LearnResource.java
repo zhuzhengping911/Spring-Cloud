@@ -4,7 +4,7 @@ package com.zzp.computer.pojo;
  * Created by zhuzhengping on 2017/4/25.
  */
 public class LearnResource {
-
+	
     private String author;
     private String title;
     private String url;
